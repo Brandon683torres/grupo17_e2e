@@ -99,6 +99,21 @@ class PagesPage{
 		cy.get('.gh-editor-header > .gh-editor-publish-buttons > .green > span').click();
 	}
 	
+	//Despublicar pagina
+	unpublishPage(){
+		cy.get('.gh-editor-header > .gh-editor-publish-buttons > .darkgrey > span').click();
+		cy.get('.gh-revert-to-draft > span').click();
+		}
+	
+	//Eliminar pagina
+	deletePage() {
+		cy.get('button[title="Settings"]').click();
+		cy.get('button[data-test-button="delete-post"]').click();
+		cy.get('button[data-test-button="delete-post-confirm"]').click();
+		cy.wait(1000);
+		
+	}
+	
 	//Filtrar las paginas publicadas
 	filterPublishedPages() {
         cy.get(this.filterDropdown).click();
