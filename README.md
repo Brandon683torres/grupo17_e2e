@@ -99,9 +99,9 @@ Brandon Olivio Torres Sánchez (bo.torres@uniandes.edu.co)
 
 •	Los escenarios de prueba construidos con kraken utilizan los dos patrones vistos. 
 
-•	Loa anterior se puede comprobar revisando el código de los scripts en c:\kraken\EscenarioX\features\EscenarioX.feature ( patrón1 ). 
+•	Loa anterior se puede comprobar revisando el código de los scripts en c:\kraken\EscenarioX\features\EscenarioX.feature ( Given-When-Then / patrón1 ). 
 
-•	Por otra parte, se utilizaron librerías adicionales ubicadas en la ruta C:\kraken\EscenarioX\features\web\step_definitions\pageObjects ( patrón2 )
+•	Por otra parte, se utilizaron librerías adicionales ubicadas en la ruta C:\kraken\EscenarioX\features\web\step_definitions\pageObjects  (  PageObjects - patrón2 )
 
 
 
