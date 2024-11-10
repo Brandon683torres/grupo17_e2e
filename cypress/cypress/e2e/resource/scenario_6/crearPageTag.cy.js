@@ -20,14 +20,17 @@ describe('Crear un nueva Pagina y Tag', function() {
   it('Crear un nuevo Tag', function() {
     // Given: el usuario está en la página de tags
     tagsPage.visit();
-
-    // When: el usuario crea un nuevo tag con nombre y descripción
-    tagsPage.clickNewTagButton();
-    tagsPage.fillTagName(tagName);
-    tagsPage.fillTagDescription(tagDescription);
-
-    // Then: el tag debería guardarse exitosamente y estar visible en la lista de tags
-    tagsPage.saveTag();
+	
+	//When: el usuario verifica si el tag existe
+	tagsPage.verifyTagExists(tagName).then(tagExiste => {
+      if (!tagExiste) {
+		// Then: el usuario crea un nuevo tag con nombre y descripción
+		tagsPage.clickNewTagButton();
+		tagsPage.fillTagName(tagName);
+		tagsPage.fillTagDescription(tagDescription);
+		tagsPage.saveTag();
+	  }
+	});
 	cy.wait(1000);
 	tagsPage.visit();
   

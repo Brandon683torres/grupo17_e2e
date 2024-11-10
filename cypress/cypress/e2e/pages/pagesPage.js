@@ -1,8 +1,19 @@
 class PagesPage{
-	//Navega a la pagina de p[aginas de Ghost
+	constructor() {
+        this.filterDropdown = '[data-test-type-select="true"] .gh-contentfilter-menu-trigger';
+        this.dropdownOptionsContainer = '.ember-power-select-options';
+        this.dropdownOptions = '.ember-power-select-options li';
+        this.pageTitleSelector = 'h3.gh-content-entry-title';
+    }
+	//Navega a la pagina de paginas de Ghost
 	visit() {
 		cy.visit('http://localhost:2368/ghost/#/pages');
 	}
+	
+	//Navega a la pagina de edicion
+	edit(pageId) {
+        cy.visit(`http://localhost:2368/ghost/#/editor/page/${pageId}/`);
+    }
 	
 	//Hace clic en el boton para crear una nueva pagina
 	clickNewPagButton() {
@@ -21,6 +32,8 @@ class PagesPage{
 	
 	//Adiciona otros componentes a la pagina
 	fillPagAdd(option,text,url) {
+		
+		cy.get('[data-secondary-instance="false"] > .koenig-lexical > [data-kg="editor"] > .kg-prose > p').should('be.visible').click();
 		
 		cy.get('div[data-kg-plus-button="true"]').trigger('mouseover');
 		
@@ -42,11 +55,7 @@ class PagesPage{
 				break;
 			case 'Bookmark':
 				cy.get('button[data-kg-card-menu-item="Bookmark"]').click();
-				cy.get('input[data-testid="bookmark-url"]').click();
-				cy.get('ul[data-testid="bookmark-url-dropdown"]')
-				.find('li')
-				.eq(text)
-				.click();
+				cy.get('[data-testid="bookmark-url"]').clear().type(`${text}{enter}`);
 				break;
 		}
 	}
@@ -85,6 +94,42 @@ class PagesPage{
 		cy.get('button[data-test-button="close-publish-flow"]').click();
 	}
 	
+	//Actualizar publicacion
+	updatePage(){
+		cy.get('.gh-editor-header > .gh-editor-publish-buttons > .green > span').click();
+	}
+	
+	//Filtrar las paginas publicadas
+	filterPublishedPages() {
+        cy.get(this.filterDropdown).click();
+        cy.get(this.dropdownOptionsContainer, { timeout: 10000 }).should('be.visible');
+        cy.get(this.dropdownOptions).contains('Published pages').click();
+    }
+	
+	// Verifica si una pagina existe
+	verifyPageExists(title) {
+        return cy.get('.gh-list-row').then(pages => {
+            const pagExiste = Array.from(pages).some(page => page.innerText.trim().includes(title));
+            return pagExiste;
+        });
+    }
+	  
+	//Obtiene el id de una pagina existente
+	getPageIdByTitle(title) {
+        //this.filterPublishedPages();
+        return cy.get(this.pageTitleSelector).then($list => {
+            let foundId = null;
+
+            $list.each((index, el) => {
+                if (el.innerText.trim() === title) {
+                    foundId = Cypress.$(el).parents('li').attr('data-test-post-id');
+                    return false; // Breaks the loop
+                }
+            });
+
+            return foundId;
+        });
+    }
 	
 }
 

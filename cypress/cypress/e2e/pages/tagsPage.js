@@ -57,7 +57,15 @@ class TagsPage {
     cy.get('.gh-contentfilter-menu').click();  // Abre el menú de filtros
     cy.contains('.ember-power-select-option', tagName).click();  // Selecciona el tag en el filtro
   }
-
+  
+  // Verifica si un tag ya existe
+  verifyTagExists(tagName) {
+    // Devuelve un valor booleano que indica si el tag existe
+    return cy.get('.gh-tag-list-name').then(tags => {
+      const tagExiste = Array.from(tags).some(tag => tag.innerText.trim() === tagName);
+      return tagExiste;
+    });
+  }
 
 }
 
