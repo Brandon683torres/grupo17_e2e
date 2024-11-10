@@ -117,9 +117,7 @@ class PagesPage{
 	
 	//Filtrar las paginas publicadas
 	filterPublishedPages() {
-        cy.get(this.filterDropdown).click();
-        cy.get(this.dropdownOptionsContainer, { timeout: 10000 }).should('be.visible');
-        cy.get(this.dropdownOptions).contains('Published pages').click();
+        cy.visit('http://localhost:2368/ghost/#/pages?type=published');
     }
 	
 	// Verifica si una pagina existe

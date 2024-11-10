@@ -1,0 +1,49 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "const { Given, When, Then } = require('@cucumber/cucumber');\nconst assert = require('assert');\n\nGiven('El usuario inicia sesión como administrador', async function () {\n    await this.driver.url('http://localhost:2368/ghost/#/signin');\n    await this.driver.$('input[name=\"identification\"]').setValue('daisy231@gmail.com');\n    await this.driver.$('input[name=\"password\"]').setValue('123qweiop890');\n    await this.driver.$('button[type=\"submit\"]').click();\n});\n\nWhen('El usuario visita la página de tags', async function () {\n    await this.driver.url('http://localhost:2368/ghost/#/tags');\n});\n\nWhen('El usuario crea un nuevo tag si no existe', async function () {\n    const tagName = 'Baile';\n    const tagDescription = 'Contenido de coreografias';\n\n    const tagsList = await this.driver.$$('h3.gh-tag-list-name');\n    const tagExists = await Promise.all(tagsList.map(async tag => (await tag.getText()) === tagName));\n    \n    if (!tagExists.includes(true)) {\n        await this.driver.$('a[title=\"New tag\"]').click();\n        await this.driver.$('input#tag-name').setValue(tagName);\n        await this.driver.$('textarea#tag-description').setValue(tagDescription);\n        await this.driver.$('button.gh-btn.gh-btn-blue.gh-btn-icon.ember-view').click();\n    }\n});\n\nWhen('El usuario visita la página de páginas', async function () {\n    await this.driver.url('http://localhost:2368/ghost/#/pages');\n});\n\nWhen('El usuario crea una nueva página con un video de YouTube', async function () {\n    const pageTitle = 'Pagina baile';\n    const videoUrl = 'https://youtu.be/1v_MuN4-UPY?si=m6-5RBytqcvX3ReT';\n\n    await this.driver.$('a[title=\"New page\"]').click();\n    await this.driver.$('textarea[placeholder=\"Page title\"]').setValue(pageTitle);\n    await this.driver.pause(1000);\n    \n    await this.driver.$('[data-kg=\"editor\"] > .kg-prose > p').click();\n    await this.driver.$('div[data-kg-plus-button=\"true\"]').moveTo();\n    await this.driver.$('button[aria-label=\"Add a card\"]').click();\n    await this.driver.$('button[data-kg-card-menu-item=\"YouTube\"]').click();\n    await this.driver.$('input[data-testid=\"embed-url\"]').setValue(`${videoUrl}{enter}`);\n    await this.driver.pause(4000);\n});\n\nWhen('El usuario asigna la etiqueta previamente creada', async function () {\n    const tagName = 'Musica';\n    await this.driver.$('button[title=\"Settings\"]').click();\n    await this.driver.$('.ember-power-select-trigger-multiple-input').setValue(tagName + '{enter}');\n    await this.driver.$('button[title=\"Settings\"]').click();\n    await this.driver.pause(1000);\n});\n\nThen('La página se publica correctamente', async function () {\n    await this.driver.$('button[data-test-button=\"publish-flow\"]').click();\n    await this.driver.$('button[data-test-button=\"continue\"]').click();\n    await this.driver.$('button[data-test-button=\"confirm-publish\"]').click();\n    await this.driver.pause(4000);\n    await this.driver.$('button[data-test-button=\"close-publish-flow\"]').click();\n});",
+        "id": "administración-de-paginas;crear-una-tag,-una-pagina-y-asignarleel-tag-a-la-pagina",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "crear una tag, una pagina y asignarleel tag a la pagina",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1466000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@user1",
+            "line": 2
+          },
+          {
+            "name": "@web",
+            "line": 2
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "administración-de-paginas",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Administración de paginas",
+    "tags": [],
+    "uri": "features\\crearPageTag.feature"
+  }
+]

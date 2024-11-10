@@ -14,7 +14,7 @@ describe('Editar una pag existente', function() {
     it('Verificar que la pagina exista', function() {
         // Given: el usuario está en la página de páginas publicadas
         pagesPage.visit();
-        //pagesPage.filterPublishedPages(); // Llama a la función para aplicar el filtro
+        pagesPage.filterPublishedPages(); // Llama a la función para aplicar el filtro
 
         // When: el usuario verifica que la página exista
         pagesPage.getPageIdByTitle(pageTitle).then((id) => {

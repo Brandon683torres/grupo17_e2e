@@ -1,0 +1,141 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "crear-una-nueva-página-y-asignar-un-tag-en-ghost;crear-un-tag-y-asignarlo-a-una-nueva-página-con-un-video-de-youtube",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Crear un tag y asignarlo a una nueva página con un video de YouTube",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1154000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "El usuario inicia sesión como administrador",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2369000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "El usuario visita la página de tags",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "El usuario crea un nuevo tag si no existe",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:14"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5554000000,
+              "error_message": "Error: Can't call click on element with selector \"button.gh-btn.gh-btn-blue.gh-btn-icon.ember-view\" because element wasn't found\n    at implicitWait (C:\\Users\\Daisy\\OneDrive\\Documents\\Pruebas automatizadas\\GIT_e2e\\grupo17_e2e\\kraken\\node_modules\\webdriverio\\build\\utils\\implicitWait.js:34:19)\n    at async Element.elementErrorHandlerCallbackFn (C:\\Users\\Daisy\\OneDrive\\Documents\\Pruebas automatizadas\\GIT_e2e\\grupo17_e2e\\kraken\\node_modules\\webdriverio\\build\\middlewares.js:20:29)\n    at async Element.wrapCommandFn (C:\\Users\\Daisy\\OneDrive\\Documents\\Pruebas automatizadas\\GIT_e2e\\grupo17_e2e\\kraken\\node_modules\\@wdio\\utils\\build\\shim.js:136:29)\n    at async CustomWorld.<anonymous> (C:\\Users\\Daisy\\OneDrive\\Documents\\Pruebas automatizadas\\GIT_e2e\\grupo17_e2e\\kraken\\features\\web\\step_definitions\\step.js:25:9)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "El usuario visita la página de páginas",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:29"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "El usuario crea una nueva página con un video de YouTube",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:33"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "El usuario asigna la etiqueta previamente creada",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "La página se publica correctamente",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:57"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 219000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@user1",
+            "line": 3
+          },
+          {
+            "name": "@web",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "crear-una-nueva-página-y-asignar-un-tag-en-ghost",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Crear una nueva página y asignar un tag en Ghost",
+    "tags": [],
+    "uri": "features\\crearPageTag.feature"
+  }
+]

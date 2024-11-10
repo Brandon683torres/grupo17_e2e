@@ -1,11 +1,11 @@
-const { After, Before } = require('@cucumber/cucumber');
-const { WebClient } = require('kraken-node');
+const { Before, After } = require('@cucumber/cucumber');
 
-Before(async function() {
-  this.deviceClient = new WebClient('chrome', {}, this.userId);
-  this.driver = await this.deviceClient.startKrakenForUserId(this.userId);
-})
+Before(async function () {
+    console.log('Iniciando escenario de prueba');
+    await this.startBrowser(); // Asegúrate de que el navegador se inicie aquí
+});
 
-After(async function() {
-  await this.deviceClient.stopKrakenForUserId(this.userId);
+After(async function () {
+    console.log('Finalizando escenario de prueba');
+    await this.stopBrowser(); // Cierra la sesión del navegador al finalizar
 });

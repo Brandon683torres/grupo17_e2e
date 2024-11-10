@@ -1,0 +1,141 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "crear-una-nueva-página-y-asignar-un-tag-en-ghost;crear-un-tag-y-asignarlo-a-una-nueva-página-con-un-video-de-youtube",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Crear un tag y asignarlo a una nueva página con un video de YouTube",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1238000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "El usuario inicia sesión como administrador",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2487000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "El usuario visita la página de tags",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 54000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "El usuario crea un nuevo tag si no existe",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2719000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "El usuario visita la página de páginas",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "El usuario crea una nueva página con un video de YouTube",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:33"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 334000000,
+              "error_message": "invalid selector: The selector \".gh-editor-title\"]\" used with strategy \"css selector\" is invalid! For more information on selectors visit the WebdriverIO docs at: https://webdriver.io/docs/selectors\n    at getErrorFromResponseBody (C:\\Users\\Daisy\\OneDrive\\Documents\\Pruebas automatizadas\\GIT_e2e\\grupo17_e2e\\kraken\\node_modules\\webdriver\\build\\utils.js:198:12)\n    at NodeJSRequest._request (C:\\Users\\Daisy\\OneDrive\\Documents\\Pruebas automatizadas\\GIT_e2e\\grupo17_e2e\\kraken\\node_modules\\webdriver\\build\\request\\index.js:166:60)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async Browser.wrapCommandFn (C:\\Users\\Daisy\\OneDrive\\Documents\\Pruebas automatizadas\\GIT_e2e\\grupo17_e2e\\kraken\\node_modules\\@wdio\\utils\\build\\shim.js:136:29)\n    at async Browser.$ (C:\\Users\\Daisy\\OneDrive\\Documents\\Pruebas automatizadas\\GIT_e2e\\grupo17_e2e\\kraken\\node_modules\\webdriverio\\build\\commands\\browser\\$.js:91:17)\n    at async Browser.wrapCommandFn (C:\\Users\\Daisy\\OneDrive\\Documents\\Pruebas automatizadas\\GIT_e2e\\grupo17_e2e\\kraken\\node_modules\\@wdio\\utils\\build\\shim.js:136:29)\n    at async CustomWorld.<anonymous> (C:\\Users\\Daisy\\OneDrive\\Documents\\Pruebas automatizadas\\GIT_e2e\\grupo17_e2e\\kraken\\features\\web\\step_definitions\\step.js:38:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "El usuario asigna la etiqueta previamente creada",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:50"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "La página se publica correctamente",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:58"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 134000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@user1",
+            "line": 3
+          },
+          {
+            "name": "@web",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "crear-una-nueva-página-y-asignar-un-tag-en-ghost",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Crear una nueva página y asignar un tag en Ghost",
+    "tags": [],
+    "uri": "features\\crearPageTag.feature"
+  }
+]

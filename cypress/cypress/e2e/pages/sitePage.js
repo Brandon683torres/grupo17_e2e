@@ -16,11 +16,13 @@ class SitePage{
 	
 	//Cambiar color fondo del sitio
 	changeColorSite(color){
-		cy.get('#site-wide').click();
+		cy.get('[data-testid="design-setting-tabs"] > [dir="ltr"] > [aria-orientation="horizontal"] > .no-scrollbar').click();
+		cy.get('button[id="site-wide"]').click();
 		cy.get('button[aria-label="Pick color"]').click();
 		cy.get('input[aria-label="Color value"]').clear().type(`${color}{enter}`);
 		cy.get('.bg-black').click();
-		cy.get('.max-h-\[82px\] > .flex > .text-grey-900').click();
+		cy.wait(1000);
+		cy.contains('Close').click();
 	}
 }
 export default SitePage;
