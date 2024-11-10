@@ -35,13 +35,13 @@ Brandon Olivio Torres Sánchez (bo.torres@uniandes.edu.co)
 
 • Se escoge la opción E2E Testing y se escoge el browser Chome + Start E2e Testing in Chrome.
 
-•	Los casos de prueba se colocan en la carpete C:\cypress\cypress\e2e y, para nuestro caso, decidimos crear una subcarpeta llamada "ghost" : C:\cypress\cypress\e2e\ghost
+• Los casos de prueba se colocan en la carpete C:\cypress\cypress\e2e y, para nuestro caso, decidimos crear una subcarpeta llamada "ghost" : C:\cypress\cypress\e2e\ghost
 
-•	La ejecución de cada script se hace a través de la herramienta gráfica ( Dashboard ) con un simple click sobre cada uno de los escenarios ( EscenarioXX_NOMBRE.cy.js )
+• La ejecución de cada script se hace a través de la herramienta gráfica ( Dashboard ) con un simple click sobre cada uno de los escenarios ( EscenarioXX_NOMBRE.cy.js )
 
-•	Los escenarios de prueba se ejecutan con un simple click. Cada prueba tiene su número ( Escenarios 1 a 20 ) e identificador.
+• Los escenarios de prueba se ejecutan con un simple click. Cada prueba tiene su número ( Escenarios 1 a 20 ) e identificador.
 
-•	Los escenarios de prueba construidos con Cypress utilizan los dos patrones vistos. Se puede comprobar revisando el código de los scripts en C:\cypress\cypress\e2e\ghost ( Given-When-Then / patrón1 ). 
+• Los escenarios de prueba construidos con Cypress utilizan los dos patrones vistos. Se puede comprobar revisando el código de los scripts en C:\cypress\cypress\e2e\ghost ( Given-When-Then / patrón1 ). 
 
 • Por otra parte, se utilizaron librerías adicionales ubicadas en la ruta C:\cypress\cypress\e2e\ghost\pages para aislar la lógica de las rutinas (  PageObjects - patrón2 )
 
@@ -85,13 +85,24 @@ Brandon Olivio Torres Sánchez (bo.torres@uniandes.edu.co)
 
 	C:\kraken\EscenarioX\features\web\step_definitions\pageObjects
 
- ## Ejecutar casos en Cypress
+ ## Ejecutar casos en Kraken
  
 •	Finalmente, para ejecutar un script particular, se ubica en el directorio respectivo y se ejecuta el comando “run”:
 
 	cd c:\kraken\EscenarioX
  
 	node C:\kraken\node_modules\kraken-node\bin\kraken-node run
+
+•	El anterior comando ejecuta todo el proceso de la prueba y al final termina nuevamente con el prompt en c:\kraken\EscenarioX
+
+•	Los resultados y pantallas quedan a nivel de c:\kraken\EscenatioX\pantallas y c:\kraken\EscenatioX\reportes
+
+•	Los escenarios de prueba construidos con kraken utilizan los dos patrones vistos. 
+
+•	Loa anterior se puede comprobar revisando el código de los scripts en c:\kraken\EscenarioX\features\EscenarioX.feature ( patrón1 ). 
+
+•	Por otra parte, se utilizaron librerías adicionales ubicadas en la ruta C:\kraken\EscenarioX\features\web\step_definitions\pageObjects ( patrón2 )
+
 
 
 
