@@ -1,4 +1,6 @@
 class LoginPage {
+	user= 'daisy231@gmail.com';
+	pass='123qweiop890';
   // Método para visitar la página de inicio de sesión
   visit() {
     cy.visit('http://localhost:2368/ghost/#/signin');
@@ -14,7 +16,7 @@ class LoginPage {
   // Método de utilidad para iniciar sesión directamente con las credenciales de administrador
   loginAsAdmin() {
     this.visit();
-    this.login('bo.torres@uniandes.edu.co', 'Bogota*2018'); // Cambia por las credenciales del administrador
+    this.login(this.user,this.pass); // Cambia por las credenciales del administrador
   }
 }
 
