@@ -1,9 +1,7 @@
-import TagsPage from '../../pages/tagsPage';
 import LoginPage from '../../pages/loginPage';
 import PagesPage from '../../pages/pagesPage';
 
-describe('Crear un nueva Pagina y Tag', function() {
-  const tagsPage = new TagsPage();
+describe('Crear un nueva Pagina', function() {
   const loginPage = new LoginPage();
   const pagesPage = new PagesPage();
   const pageTitle = 'Pagina programada';
