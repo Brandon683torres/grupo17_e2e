@@ -83,9 +83,10 @@ class PagesPage{
 	
 	//Programar publicacion
 	scheduledPage(date,time) {
-		cy.get('button[data-test-button="publish-flow"]').click();
-		cy.get('button[class="gh-publish-setting-title"]').click();
-		cy.get('div[data-test-radio="schedule"]').click();
+		cy.get('button[data-test-button="publish-flow"]').eq(0).click();
+		//cy.get('button[class="gh-publish-setting-title"]').click();
+		cy.get('.gh-publish-setting.last > .gh-publish-setting-title').click();
+		cy.get(':nth-child(2) > label').click();
 		cy.get('input[placeholder="YYYY-MM-DD"]').clear().type(date);
 		cy.get('input[data-test-date-time-picker-time-input]').clear().type(time);
 		cy.get('button[data-test-button="continue"]').click();

@@ -18,7 +18,7 @@ describe('Despublicar y eliminar una pagina', function() {
         // When: el usuario verifica que la página exista
         pagesPage.getPageIdByTitle(pageTitle).then((id) => {
             if (id) {
-                // Then: abre el modo de edición de la página
+                // Then: abre el modo de edición de la página, despublica y elimina
                 pagesPage.edit(id);
 				pagesPage.unpublishPage();
 				pagesPage.deletePage();
