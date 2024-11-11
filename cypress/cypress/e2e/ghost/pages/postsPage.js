@@ -18,7 +18,7 @@ class PostsPage {
   
     orderByTime(time) {
   // Abre el menú de order de posts
-  cy.wait(4000); // Espera  segundos
+  cy.wait(1000); // Espera  segundos
   cy.contains('.gh-contentfilter-menu', 'Newest first').click();
 
   // Espera a que las opciones de ordenamiento se carguen en el menú
