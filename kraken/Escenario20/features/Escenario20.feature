@@ -1,7 +1,7 @@
-Feature: Exporta Miembros - Escenario 20
+Feature: Filter Tool - Escenario 20
 
 @user1 @web
-Scenario: Exporta Miembros - Escenario 20
+Scenario: Filter Tool - Escenario 20
 
   Given I navigate to page "http://localhost:2368/ghost/#/signin"
   And   I login with "<USUARIO>" and "<PASSWORD>" - Escenario 20
