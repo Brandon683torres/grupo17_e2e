@@ -37,7 +37,7 @@ El login y password del administrador debe modificarse en un único archivo logi
   
     this.visit();
     
-    this.login('usuario@orreo.xx', 'password'); // Cambia por las credenciales del administrador
+    this.login('usuario@correo.xx', 'password'); // Cambia por las credenciales del administrador
     
   }
 
