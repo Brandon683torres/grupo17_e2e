@@ -7,7 +7,7 @@ Edgar Humberto Rodríguez Roa (eh.rodriguez20@uniandes.edu.co)
 
 Brandon Olivio Torres Sánchez (bo.torres@uniandes.edu.co)
 
-# Configuración de pruebas con CYPRESS
+# Configuración de pruebas con CYPRESS para Semana 7 - Validación de datos
 
 •	El software Cypress fue instalado de manera local en un PC Windows en una carpeta c:\cypress
 
@@ -29,7 +29,7 @@ Brandon Olivio Torres Sánchez (bo.torres@uniandes.edu.co)
 
 • Posteriormente, al ejecutarlo se entra directamente a la opción Configured en pruebas E2E.
 
-• El repositorio GIT de la semana 7 debe descargarse e instalarse en c:\cypress dejando los archivos de pruebas, datos y paginas a nivel de C:\cypress\cypress\e2e\ghost
+• El repositorio GIT de la semana 7 debe descargarse de la carpeta "Semana7 - Validacion de datos" e instalarse en c:\cypress dejando los archivos de pruebas, datos y paginas a nivel de C:\cypress\cypress\e2e\ghost
 
 ## Ejecutar casos en Cypress
 
