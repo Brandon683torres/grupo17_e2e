@@ -49,6 +49,10 @@ npm install @faker-js/faker --save-dev
   
 ## Ejecutar casos en Cypress
 
+• Subir Cypress con el siguente comando desde c:\cypress
+
+node .\node_modules\cypress\bin\cypress open
+
 • Se escoge la opción E2E Testing y se escoge el browser Chome + Start E2E Testing in Chrome.
 
 • Los casos de prueba se colocan en la carpete C:\cypress\cypress\e2e y, para nuestro caso, decidimos crear una subcarpeta llamada "ghost" : C:\cypress\cypress\e2e\ghost
