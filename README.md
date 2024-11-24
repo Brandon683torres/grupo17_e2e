@@ -71,7 +71,7 @@ Ejemplo: 10_createPost_aleatorio.cy     ... se trata de la prueba número 10 que
 
 • Por otra parte, se utilizaron librerías adicionales ubicadas en la ruta C:\cypress\cypress\e2e\ghost\pages para aislar la lógica de las rutinas 
 
-• Una vez descargados, los datapool ( apriori ) utilizados para todas las pruebas apriori fueron construidos en mockaroo y se encuentran en la carpeta C:\cypress\cypress\e2e\ghost\datos
+• Los datapool ( apriori ) utilizados para todas las pruebas apriori fueron construidos en Mockaroo y se encuentran en la carpeta C:\cypress\cypress\e2e\ghost\datos
 
 21/11/2024  06:22 p. m.            27.516 MOCK_DATA_LARGA.json
 
