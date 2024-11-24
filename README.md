@@ -101,6 +101,7 @@ MOCK_DATA_URL.json
 
 MOCK_DATA_USER_PASSWORD.json
 
+Más información sobre las estrategias en la WIKI: Semana 7 ‐ Validación de Datos ‐ Estrategias de Generación de Datos
 
 • Los mencionados archivos se utilizan principalmente para operaciones sobre Login. Pages. Posts, Tags y Members y fueron cosntruidos directamente sobre Mockaroo y grabados tanto en formato datappol ( local )
   como en formato URL de Schema  ( Consulta dinámica vía URL utilizado en las pruebas pseudo ).
