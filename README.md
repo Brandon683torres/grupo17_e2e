@@ -46,19 +46,33 @@ Ejemplo: 10_createPost_aleatorio.cy     ... se trata de la prueba número 10 que
 • Una vez descargados, los datapool ( apriori ) utilizados para todas las pruebas apriori fueron construidos en mockaroo y se encuentran en la carpeta C:\cypress\cypress\e2e\ghost\datos
 
 21/11/2024  06:22 p. m.            27.516 MOCK_DATA_LARGA.json
+
 23/11/2024  01:06 a. m.            68.703 MOCK_DATA_MEMBERS.json
+
 21/11/2024  08:40 p. m.                84 MOCK_DATA_ORDER1.json
+
 21/11/2024  08:52 p. m.               169 MOCK_DATA_ORDER2.json
+
 23/11/2024  10:42 a. m.               138 MOCK_DATA_ORDER3.json
+
 21/11/2024  07:16 p. m.            45.265 MOCK_DATA_PAGE1.json
+
 21/11/2024  07:42 p. m.            17.000 MOCK_DATA_PAGE2.json
+
 21/11/2024  07:48 p. m.           170.894 MOCK_DATA_PAGE3.json
+
 21/11/2024  07:16 p. m.            45.265 MOCK_DATA_POST1.json
+
 21/11/2024  07:42 p. m.            17.000 MOCK_DATA_POST2.json
+
 21/11/2024  07:48 p. m.           170.894 MOCK_DATA_POST3.json
+
 23/11/2024  03:43 p. m.           947.962 MOCK_DATA_TAGS.json
+
 21/11/2024  08:12 p. m.           130.882 MOCK_DATA_URL.json
+
 21/11/2024  07:40 a. m.            12.401 MOCK_DATA_USER_PASSWORD.json
+
 
 • Los mencionados archivos se utilizan principalmente para operaciones sobre Login. Pages. Posts, Tags y Members y fueron cosntruidos directamente sobre Mockaroo y grabados tanto en formato datappol ( local )
   como en formato URL de Schema utilizado en las pruebas pseudo.
