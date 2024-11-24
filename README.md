@@ -40,6 +40,12 @@ El login y password del administrador debe modificarse en un único archivo logi
     this.login('usuario@orreo.xx', 'password'); // Cambia por las credenciales del administrador
     
   }
+
+## Instalación de FAKER
+
+Se realiza desde una ventana de comando en el directorio del proyecto c;\cypress ejecutando el siguiente comando 
+
+npm install @faker-js/faker --save-dev
   
 ## Ejecutar casos en Cypress
 
