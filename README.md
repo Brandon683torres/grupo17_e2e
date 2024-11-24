@@ -45,7 +45,7 @@ Brandon Olivio Torres Sánchez (bo.torres@uniandes.edu.co)
 
       TIPO puede ser aleatorio, apriori o pseudo 
 
-• Los 120 escenarios de prueba se ejecutan con un simple click dentro de Cypress. Cada prueba tiene su número al comienzo y su nombre indica si es de tipo aleatorio ( Faker ) , apriori ( datapools ) o pseudo ( datos generados por mockaroo ).
+• Los 120 escenarios de prueba se ejecutan con un simple click dentro de Cypress. Cada prueba tiene su número al comienzo y su nombre indica si es de tipo aleatorio ( Faker ) , apriori ( datapools construido con Mockaroo ) o pseudo ( datos generados dinámicamente por Mockaroo ).
 
 Ejemplo: 10_createPost_aleatorio.cy     ... se trata de la prueba número 10 que corresponde a la Creación de un Post con datos aleatorios ( Faker )
 
