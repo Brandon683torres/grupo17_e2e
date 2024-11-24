@@ -35,7 +35,13 @@ Brandon Olivio Torres Sánchez (bo.torres@uniandes.edu.co)
 
 • Los casos de prueba se colocan en la carpete C:\cypress\cypress\e2e y, para nuestro caso, decidimos crear una subcarpeta llamada "ghost" : C:\cypress\cypress\e2e\ghost
 
-• La ejecución de cada script se hace a través de la herramienta gráfica ( Dashboard ) con un simple click sobre cada uno de los escenarios ( NN.NOMBRE_PRUEBA.cy.js ) NN entre 01 y 102
+• La ejecución de cada script se hace a través de la herramienta gráfica ( Dashboard ) con un simple click sobre cada uno de los escenarios ( NN_NOMBRE_TIPO.cy ) donde:
+
+      NN toma valores entre 01 y 120
+
+      NOMBRE indica la naturaleza de la Prueba que se implementa
+
+     TIPO puede ser aleatorio, apriori o pseudo 
 
 • Los 120 escenarios de prueba se ejecutan con un simple click dentro de Cypress. Cada prueba tiene su número al comienzo y su nombre indica si es de tipo aleatorio ( Faker ) , apriori ( datapools ) o pseudo ( datos generados por mockaroo ).
 
