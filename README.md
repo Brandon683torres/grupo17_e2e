@@ -83,7 +83,7 @@ Ejemplo: 10_createPost_aleatorio.cy     ... se trata de la prueba número 10 que
 
 
 • Los mencionados archivos se utilizan principalmente para operaciones sobre Login. Pages. Posts, Tags y Members y fueron cosntruidos directamente sobre Mockaroo y grabados tanto en formato datappol ( local )
-  como en formato URL de Schema utilizado en las pruebas pseudo.
+  como en formato URL de Schema  ( Consulta dinámica vía URL utilizado en las pruebas pseudo ).
 
 
 
