@@ -31,6 +31,16 @@ Brandon Olivio Torres Sánchez (bo.torres@uniandes.edu.co)
 
 • El repositorio GIT de la semana 7 debe descargarse de la carpeta "Semana7 - Validacion de datos" e instalarse en c:\cypress dejando los archivos de pruebas, datos y paginas a nivel de C:\cypress\cypress\e2e\ghost
 
+El login y password del administrador debe modificarse en un único archivo loginPage.js ubicado en la carpera C:\cypress\cypress\e2e\ghost\datos en la rutina loginAsAdmin()
+
+  loginAsAdmin() {
+  
+    this.visit();
+    
+    this.login('usuario@orreo.xx', 'password'); // Cambia por las credenciales del administrador
+    
+  }
+  
 ## Ejecutar casos en Cypress
 
 • Se escoge la opción E2E Testing y se escoge el browser Chome + Start E2E Testing in Chrome.
