@@ -3,8 +3,6 @@
 # Integrantes
 Fabian Gonzalo Díaz Ángel (f.diaza@uniandes.edu.co)
 
-Deyssi Rocío Hómez Prada (dr.homez@uniandes.edu.co)
-
 Edgar Humberto Rodríguez Roa (eh.rodriguez20@uniandes.edu.co)
 
 Brandon Olivio Torres Sánchez (bo.torres@uniandes.edu.co)
@@ -33,75 +31,37 @@ Brandon Olivio Torres Sánchez (bo.torres@uniandes.edu.co)
 
 ## Ejecutar casos en Cypress
 
-• Se escoge la opción E2E Testing y se escoge el browser Chome + Start E2e Testing in Chrome.
+• Se escoge la opción E2E Testing y se escoge el browser Chome + Start E2E Testing in Chrome.
 
 • Los casos de prueba se colocan en la carpete C:\cypress\cypress\e2e y, para nuestro caso, decidimos crear una subcarpeta llamada "ghost" : C:\cypress\cypress\e2e\ghost
 
-• La ejecución de cada script se hace a través de la herramienta gráfica ( Dashboard ) con un simple click sobre cada uno de los escenarios ( EscenarioXX_NOMBRE.cy.js )
+• La ejecución de cada script se hace a través de la herramienta gráfica ( Dashboard ) con un simple click sobre cada uno de los escenarios ( NN.NOMBRE_PRUEBA.cy.js ) NN entre 01 y 102
 
-• Los escenarios de prueba se ejecutan con un simple click. Cada prueba tiene su número ( Escenarios 1 a 20 ) e identificador.
+• Los 120 escenarios de prueba se ejecutan con un simple click dentro de Cypress. Cada prueba tiene su número al comienzo y su nombre indica si es de tipo aleatorio ( Faker ) , apriori ( datapools ) o pseudo ( datos generados por mockaroo ).
 
-• Los escenarios de prueba construidos con Cypress utilizan los dos patrones vistos. Se puede comprobar revisando el código de los scripts en C:\cypress\cypress\e2e\ghost ( Given-When-Then / patrón1 ). 
+Ejemplo: 10_createPost_aleatorio.cy     ... se trata de la prueba número 10 que corresponde a la Creación de un Post con datos aleatorios ( Faker )
 
-• Por otra parte, se utilizaron librerías adicionales ubicadas en la ruta C:\cypress\cypress\e2e\ghost\pages para aislar la lógica de las rutinas (  PageObjects - patrón2 )
+• Por otra parte, se utilizaron librerías adicionales ubicadas en la ruta C:\cypress\cypress\e2e\ghost\pages para aislar la lógica de las rutinas 
 
-# Configuración de pruebas con Kraken
+• Una vez descargados, los datapool ( apriori ) utilizados para todas las pruebas apriori fueron construidos en mockaroo y se encuentran en la carpeta C:\cypress\cypress\e2e\ghost\datos
 
-•	El software kraken fue instalado de manera local en un PC Windows en un carpeta c:\kraken
+21/11/2024  06:22 p. m.            27.516 MOCK_DATA_LARGA.json
+23/11/2024  01:06 a. m.            68.703 MOCK_DATA_MEMBERS.json
+21/11/2024  08:40 p. m.                84 MOCK_DATA_ORDER1.json
+21/11/2024  08:52 p. m.               169 MOCK_DATA_ORDER2.json
+23/11/2024  10:42 a. m.               138 MOCK_DATA_ORDER3.json
+21/11/2024  07:16 p. m.            45.265 MOCK_DATA_PAGE1.json
+21/11/2024  07:42 p. m.            17.000 MOCK_DATA_PAGE2.json
+21/11/2024  07:48 p. m.           170.894 MOCK_DATA_PAGE3.json
+21/11/2024  07:16 p. m.            45.265 MOCK_DATA_POST1.json
+21/11/2024  07:42 p. m.            17.000 MOCK_DATA_POST2.json
+21/11/2024  07:48 p. m.           170.894 MOCK_DATA_POST3.json
+23/11/2024  03:43 p. m.           947.962 MOCK_DATA_TAGS.json
+21/11/2024  08:12 p. m.           130.882 MOCK_DATA_URL.json
+21/11/2024  07:40 a. m.            12.401 MOCK_DATA_USER_PASSWORD.json
 
-•	Primero se crea el directorio: md c:\kraken
-
-•	Se requiere tener instalado node.js versión v20.18.0 que incorpora npm (Node Package Manager), que es una herramienta fundamental dentro del ecosistema de Node.js.
-
-•	Dentro de la carpeta c:\ se instaló krakencon el comando:
-
- 	npm install kraken-node 
-  
-•	También se instaló otro software appium requerido:
-
-	npm install -g appium
- 
-•	Por último, se descargó el software de Apache: sdk-repo-windows-platform-tools.zip que trae el comando adb.exe, requerido por kraken, y se dejó disponible en una ruta configurada en el PATH del PC.
-
-•	Dentro del directorio c:\kraken se crearon a mano 20 directorios llamados Escenario1 .. hasta Escenario20 : md c:\kraken\EscenarioX
-
-•	En cada uno de estos directorios se ejecutó el comando “gen” para inicializar cada proyecto:
-
-	cd c:\EscenarioX
- 
-	node C:\kraken\node_modules\kraken-node\bin\kraken-node gen
- 
-•	Los archivos de cada proyecto quedan a nivel de C:\kraken\EscenarioX empezando por su archivo de propiedades properties.json que se creó para cada proyecto
-
-•	El primer script  “EscenarioX.feature” se ubica en la carpeta
-
-	C:\kraken\EscenarioX\features
- 
-•	Los archivos de steps del kraken se ubican en:
-
-	C:\kraken\EscenarioX\features\web\step_definitions\stepsEscenarioX.js
- 
-•	Se creó para cada escenario un directorio para ubicar las librerías construidas en cada escenario: 
-
-	C:\kraken\EscenarioX\features\web\step_definitions\pageObjects
-
- ## Ejecutar casos en Kraken
- 
-•	Finalmente, para ejecutar un script particular, se ubica en el directorio respectivo y se ejecuta el comando “run”:
-
-	cd c:\kraken\EscenarioX
- 
-	node C:\kraken\node_modules\kraken-node\bin\kraken-node run
-
-•	El anterior comando ejecuta todo el proceso de la prueba y al final termina nuevamente con el prompt en c:\kraken\EscenarioX
-
-•	Los resultados y pantallas quedan a nivel de c:\kraken\EscenatioX\pantallas y c:\kraken\EscenatioX\reportes
-
-•	Los escenarios de prueba construidos con kraken utilizan los dos patrones vistos. 
-
-•	Loa anterior se puede comprobar revisando el código de los scripts en c:\kraken\EscenarioX\features\EscenarioX.feature ( Given-When-Then / patrón1 ). 
-
-•	Por otra parte, se utilizaron librerías adicionales ubicadas en la ruta C:\kraken\EscenarioX\features\web\step_definitions\pageObjects  (  PageObjects - patrón2 )
+• Los mencionados archivos se utilizan principalmente para operaciones sobre Login. Pages. Posts, Tags y Members y fueron cosntruidos directamente sobre Mockaroo y grabados tanto en formato datappol ( local )
+  como en formato URL de Schema utilizado en las pruebas pseudo.
 
 
 
