@@ -69,7 +69,7 @@ node .\node_modules\cypress\bin\cypress open
 
 Ejemplo: 10_createPost_aleatorio.cy     ... se trata de la prueba número 10 que corresponde a la Creación de un Post con datos aleatorios ( Faker )
 
-• Por otra parte, se utilizaron librerías adicionales ubicadas en la ruta C:\cypress\cypress\e2e\ghost\pages para aislar la lógica de las rutinas 
+• Por otra parte, se utilizaron librerías adicionales ubicadas en la ruta C:\cypress\cypress\e2e\ghost\pages para aislar la lógica de algunas rutinas y funciones. 
 
 • Los datapool ( apriori ) utilizados para todas las pruebas apriori fueron construidos en Mockaroo y se encuentran en la carpeta C:\cypress\cypress\e2e\ghost\datos
 
