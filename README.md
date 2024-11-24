@@ -61,7 +61,7 @@ node .\node_modules\cypress\bin\cypress open
 
       NN toma valores entre 01 y 120
 
-      NOMBRE indica la naturaleza de la Prueba que se implementa
+      NOMBRE tiene una descripción de la Prueba que se implementa
 
       TIPO puede ser aleatorio, apriori o pseudo 
 
