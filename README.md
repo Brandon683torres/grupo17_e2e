@@ -29,6 +29,8 @@ Brandon Olivio Torres Sánchez (bo.torres@uniandes.edu.co)
 
 • Posteriormente, al ejecutarlo se entra directamente a la opción Configured en pruebas E2E.
 
+• El repositorio GIT de la semana 7 debe descargarse e instalarse en c:\cypress dejando los archivos de pruebas, datos y paginas a nivel de C:\cypress\cypress\e2e\ghost
+
 ## Ejecutar casos en Cypress
 
 • Se escoge la opción E2E Testing y se escoge el browser Chome + Start E2E Testing in Chrome.
