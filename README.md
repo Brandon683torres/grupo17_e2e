@@ -1,6 +1,7 @@
 # Grupo 17 - Semana 8
 
 # Integrantes
+
 Fabian Gonzalo Díaz Ángel (f.diaza@uniandes.edu.co)
 
 Edgar Humberto Rodríguez Roa (eh.rodriguez20@uniandes.edu.co)
@@ -18,6 +19,10 @@ https://github.com/Brandon683torres/grupo17_e2e/blob/main/Estrategia-pruebas-sem
 El enlace al video de presentación de la estrategia para Semana 8 se encuentra disponible en YOUTUBE:
 
 https://www.youtube.com/watch?v=43Cx0a1t8a8
+
+# Configuración de Ghost - Semana 8
+
+El software Ghost 5.96.0 es el mismo utilizado en entregas anteriores. Debe estar inicializado para permitir la ejecución de las pruebas.
 
 # Configuración de pruebas con CYPRESS - Semana 8
 
