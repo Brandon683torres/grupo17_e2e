@@ -7,6 +7,10 @@ Edgar Humberto Rodríguez Roa (eh.rodriguez20@uniandes.edu.co)
 
 Brandon Olivio Torres Sánchez (bo.torres@uniandes.edu.co)
 
+# Docuemneto Entrega Final - Semana 8
+
+El documento soporte de la Estrategia planteada para semana 8 se encuentra disponible en la raiz del repositorio GIT bajo el nombre "Estrategia-pruebas-semana-8.pdf"
+
 # Video Entrega Final - Semana 8
 
 El enlace al video de presentación de la estrategia para Semana 8 se encuentra disponible en YOUTUBE:
