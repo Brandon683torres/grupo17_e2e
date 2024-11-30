@@ -7,6 +7,12 @@ Edgar Humberto Rodríguez Roa (eh.rodriguez20@uniandes.edu.co)
 
 Brandon Olivio Torres Sánchez (bo.torres@uniandes.edu.co)
 
+# Video Entrega Final - Semana 8
+
+El enlace al video de presentación de la estrategia para Semana 8 se encuentra disponible en YOUTUBE:
+
+https://www.youtube.com/watch?v=43Cx0a1t8a8
+
 # Configuración de pruebas con CYPRESS - Semana 8
 
 •	El software Cypress fue instalado de manera local en un PC Windows en una carpeta c:\cypress
