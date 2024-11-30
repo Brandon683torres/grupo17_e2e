@@ -11,6 +11,8 @@ Brandon Olivio Torres Sánchez (bo.torres@uniandes.edu.co)
 
 El documento soporte de la Estrategia planteada para semana 8 se encuentra disponible en la raiz del repositorio GIT bajo el nombre "Estrategia-pruebas-semana-8.pdf"
 
+https://github.com/Brandon683torres/grupo17_e2e/blob/main/Estrategia-pruebas-semana-8.pdf
+
 # Video Entrega Final - Semana 8
 
 El enlace al video de presentación de la estrategia para Semana 8 se encuentra disponible en YOUTUBE:
