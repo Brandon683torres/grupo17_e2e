@@ -29,6 +29,44 @@ https://www.youtube.com/watch?v=43Cx0a1t8a8
 
 •	Dentro de la carpeta c:\ se instaló Cypress con el comando:
 
+o	npm install cypress
+
+•	Para correr la consola del Cypress se ejecuta desde c:\cypress el comando:
+
+node  .\node_modules\cypress\bin\cypress open    
+
+y aparece en la consola web la primera vez
+
+Sólo la primera vez se presiona “Not Configured” y Continue
+
+Posteriormente, al ejecutarlo se entra directamente a la opción Configured en pruebas E2E:
+
+Aquí se escoge la opción E2E Testing y se escoge el browser Chome + Start E2e Testing in Chrome:
+
+•	Los casos de prueba se colocan en la carpete C:\cypress\cypress\e2e y, para nuestro caso, decidimos crear una carpeta abajo llamada Ghost : C:\cypress\cypress\e2e\ghost
+
+•	La ejecución de cada script se hace a través de la herramienta con un simple click sobre cada uno de los escenarios
+
+•	Los escenarios de prueba se ejecutan con un simple click. Cada prueba tiene su número ( Escenarios 1 a 30 ) e identificación.
+
+NOTA IMPORTANTE: Los casos han sido probados y NO tienen código quemado.
+
+El UNICO archivo que debe modificarse es el ubicado en C:\cypress\cypress\e2e\ghost\loginPage
+
+Allí debe ajustarse la rutina de LoginAsAdmin.js
+
+  loginAsAdmin() {
+    this.visit();
+    this.login('usuario', 'password'); // Cambia por las credenciales del administrador
+  }
+
+  Debe reemplazarse 'usuario' y 'password' con un valor valido de administrador en su instalación.
+
+  Otra recomendación al ejecutar los scripts es que hemos incorporado puntos cy.wait() dentro del código para permitir que cada scripy fulya sin inconvenientes y para visualizar los pasos en la ejecución.
+
+  Es necesario tener paciencia y esperar a que cada script termine normalmente sin intervenirlo.
+
+
  
 
 
