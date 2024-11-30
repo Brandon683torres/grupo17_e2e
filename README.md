@@ -7,7 +7,7 @@ Edgar Humberto Rodríguez Roa (eh.rodriguez20@uniandes.edu.co)
 
 Brandon Olivio Torres Sánchez (bo.torres@uniandes.edu.co)
 
-# Configuración de pruebas con CYPRESS para Semana 7 - Validación de datos
+# Configuración de pruebas con CYPRESS - Semana 8
 
 •	El software Cypress fue instalado de manera local en un PC Windows en una carpeta c:\cypress
 
