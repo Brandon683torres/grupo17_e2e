@@ -51,7 +51,7 @@ Aquí se escoge la opción E2E Testing y se escoge el browser Chome + Start E2e 
 
 NOTA IMPORTANTE: Los casos han sido probados y NO tienen código quemado.
 
-El UNICO archivo que debe modificarse es el ubicado en C:\cypress\cypress\e2e\ghost\loginPage
+El UNICO archivo que debe modificarse es el ubicado en C:\cypress\cypress\e2e\ghost\loginPage.js
 
 Allí debe ajustarse la rutina de LoginAsAdmin.js
 
@@ -62,9 +62,9 @@ Allí debe ajustarse la rutina de LoginAsAdmin.js
 
   Debe reemplazarse 'usuario' y 'password' con un valor valido de administrador en su instalación.
 
-  Otra recomendación al ejecutar los scripts es que hemos incorporado puntos cy.wait() dentro del código para permitir que cada scripy fulya sin inconvenientes y para visualizar los pasos en la ejecución.
+  Otra recomendación al ejecutar los scripts es que hemos incorporado puntos cy.wait() dentro del código para permitir que cada script fluya sin inconvenientes y para visualizar los pasos en la ejecución.
 
-  Es necesario tener paciencia y esperar a que cada script termine normalmente sin intervenirlo.
+  Es necesario tener paciencia y esperar a que cada script termine normalmente sin intervenirlo. En caso contrario puede fallar. LA terminación se puede observar en el log de Cypress.
 
 
  
