@@ -48,7 +48,7 @@ Posteriormente, al ejecutarlo se entra directamente a la opción Configured en p
 
 Aquí se escoge la opción E2E Testing y se escoge el browser Chome + Start E2e Testing in Chrome:
 
-•	Los casos de prueba se colocan en la carpete C:\cypress\cypress\e2e y, para nuestro caso, decidimos crear una carpeta abajo llamada Ghost : C:\cypress\cypress\e2e\ghost
+•	Los casos de prueba se colocan en la carpeta C:\cypress\cypress\e2e y, para nuestro caso, decidimos crear una carpeta abajo llamada Ghost : C:\cypress\cypress\e2e\ghost
 
 •	La ejecución de cada script se hace a través de la herramienta con un simple click sobre cada uno de los escenarios
 
