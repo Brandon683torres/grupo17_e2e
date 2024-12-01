@@ -77,6 +77,10 @@ El inventario de pruebas manuales requeridas para esta entrega está ubicado en 
 
 https://github.com/Brandon683torres/grupo17_e2e/blob/main/inventario-pruebas-exploratorias-semana8.xlsx
 
+# Pruebas incidencias en JIRA - Semana 8
+
+https://uniandes-team-coco.atlassian.net/jira/software/c/projects/GHOSTANDES/issues?jql=project%20%3D%20%22GHOSTANDES%22%20ORDER%20BY%20created%20DESC
+
 # Nuevos casos de Prueba Desarrollados y Automatizados Cypress ( Sprint 1 - Semana 1 ) - Semana 8
 
 Distribuimos la carga de los tres integrantes del grupo y se desarrollaron 30 casos de pruebas según lo planteado en el documento de estrategia ( 10 / persona )
