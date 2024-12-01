@@ -77,6 +77,42 @@ El inventario de pruebas manuales requeridas para esta entrega está ubicado en 
 
 https://github.com/Brandon683torres/grupo17_e2e/blob/main/inventario-pruebas-exploratorias-semana8.xlsx
 
+# Nuevos casos de Prueba Desarrollado y Automatizados Cypress ( Sprint 1 - Semana 1 ) - Semana 8
+
+01 Escenario POST - Registro de elemento.cy.js
+02 Escenario POST - Actualización de registro creado en prueba 01.cy.js
+03 Escenario POST - Eliminación definitiva de POST anterior creado en prueba 01.cy.js
+04 Escenario POST - Inclusion Edicion Combinada.cy.js
+05 Escenario POST - Crear Post Adicionandole URL.cy.js
+06 Escenario POST - Ordenamiento según Parámetro.cy.js
+07 Escenario POST - Inclusión de POST + Excerpt en Propiedades.cy.js
+08 Escenario POST - Inclusión de Contenido Calculado.cy.js
+09 Escenario POST - Schedule de POST - después de correr Escenario 01.cy.js
+09 Escenario POST - Schedule de POST.cy.js
+10 Escenario POST - Titulo demasiado Grande elimina boton Publish.cy.js
+11 Escenario MEMBERS  Generacion Nuevo Miembro.cy.js
+12 Escenario MEMBERS BorrarMiembro.cy.js
+13 Escenario MEMBERS Actualizar Datos Miembro.cy.js
+14 Escenario MEMBERS  Exportar Archivo Miembros.cy.js
+15 Escenario MEMBERS Buscar Miembro Existente.cy.js
+16 Escenario MEMBERS Generacion Nuevo Miembro Negativo.cy.js
+17 Escenario MEMBERS Borrar Cualquier Miembro.cy.js
+18 Escenario MEMBERS  Actualizar Miembro Borde.cy.js
+19 Escenario MEMBERS Ggeneracion Correo Negativo.cy.js
+20 Escenario MEMBERS - Filtrar Nombre Miembro.cy.js
+21 Escenario TAG - Crear Tag primero descripción y nombre.cy.js
+22 Escenario TAG - Crea un tag con color válido y nombre no válido.cy.js
+23 Escenario TAG - Crea un tag con color válido y nombre no válido.cy.js
+24 Escenario TAG - Modificar Tag.cy.js
+25 Escenario TAG - Validación de datos con datos inválidos.cy.js
+26 Escenario TAG - Buscar Tag.cy.js
+27 Escenario TAG - Crear Tag sin campos del color.cy.js
+28 Escenario TAG -Texto Largo en el nombre del Tag.cy.js
+29 Escenario TAG -Crear un tag con solo el nombre.cy.js
+30 Escenario TAG - Crear Tag con invalida descripción.cy.js
+
+
+
 
 
 
