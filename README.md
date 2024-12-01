@@ -79,6 +79,8 @@ https://github.com/Brandon683torres/grupo17_e2e/blob/main/inventario-pruebas-exp
 
 # Nuevos casos de Prueba Desarrollado y Automatizados Cypress ( Sprint 1 - Semana 1 ) - Semana 8
 
+Distribuimos la carga de los tres integrantes del grupo y se desarrollaron 30 casos de pruebas según lo planteado en el documento de estrategia ( 10 / persona )
+
 01 Escenario POST - Registro de elemento.cy.js
 
 02 Escenario POST - Actualización de registro creado en prueba 01.cy.js
